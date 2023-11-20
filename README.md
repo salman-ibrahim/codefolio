@@ -94,15 +94,15 @@ We truly ❤️ pull requests! If you wish to help.
 # Visual Representation
 ```mermaid
 flowchart TD
-  A[lmas3009/cleandocs-template] --> B{Get This Repo};
-  B -- By Fork --> C[yourusername/cleandocs-template];
+  A[salman-ibrahim/codefolio] --> B{Get This Repo};
+  B -- By Fork --> C[yourusername/codefolio];
   B -- By Clone --> D[Your Local Repo];
   C ----> E[Create New Branch];
   D ----> E[Create New Branch];
-  E --> F[Made Some Changes];
+  E --> F[Maka Some Changes];
   F --> G[Commit Changes];
   G -- On GitHub --> H[Create Pull Request];
-  H -- If Rejected -- Made Changes Again --> F;
+  H -- If Rejected -- Make more changes --> F;
   H -- If Approved --> I[Changes Done]
 ```
 
