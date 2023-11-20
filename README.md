@@ -106,11 +106,7 @@ flowchart TD
   H -- If Approved --> I[Changes Done]
 ```
 
-### :scroll: Code of Conduct
-
-Please read the [Code of Conduct](https://github.com/salman-ibrahim/codefolio/blob/master/CODE_OF_CONDUCT.md)
-
-## :warning: License
+## ⚖️: License
 
 Distributed under the MIT License. See LICENSE.txt for more information.
 
