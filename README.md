@@ -4,6 +4,8 @@
   <a href="https://github.com/salman-ibrahim/codefolio/blob/main/LICENSE" target="_blank">
     <img alt="License: MIT License" src="https://img.shields.io/badge/License-MIT License-yellow.svg" />
   </a>
+  [![deployment](https://github.com/salman-ibrahim/codefolio/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/salman-ibrahim/codefolio/actions/workflows/pages/pages-build-deployment)
+  [![PR](https://github.com/salman-ibrahim/codefolio/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/salman-ibrahim/codefolio/actions/workflows/build.yml)
 </p>
 
 > Codefolio, a pragmatic solution for developers seeking a sleek and efficient way to showcase their work. This open-source project combines a developer's expertise, a portfolio's utility, and minimal design that looks just like a code editor except it is not a code editor.
