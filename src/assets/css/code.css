@@ -82,9 +82,6 @@
 
 /* Code Lines */
 
-.property {
-}
-
 .property::after {
     content: ":";
 }

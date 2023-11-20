@@ -14,7 +14,7 @@ function Portfolio() {
         script.src = '/lines.js';
         script.async = true;
         document.body.appendChild(script);
-    }, []); // eslint-disable-line react-hooks/exhaustive-deps
+    }, []);
 
     return (
         <div id="editor">
