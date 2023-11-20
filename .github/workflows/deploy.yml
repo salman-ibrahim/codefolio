@@ -1,9 +1,9 @@
 name: Deploy to GitHub Pages 🚀
 
 on:
-  pull_request:
-    types:
-      - closed
+  push:
+    branches:
+      - main
 
 permissions:
     contents: read
@@ -49,6 +49,6 @@ jobs:
           path: './dist'
 
       - name: Deploy to GitHub Pages
-        if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         id: deployment
         uses: actions/deploy-pages@v1
