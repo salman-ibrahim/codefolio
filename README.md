@@ -85,11 +85,9 @@ npm run lint
 
 All code contributions - if you want change the ui -  must go through a pull request and be approved by a core developer before being merged. This is to ensure a proper review of all the code.
 
-After making changes add your information in contributors section in index.html
+I would love pull requests! If you wish to help.
 
-We truly ❤️ pull requests! If you wish to help.
-
-✅  &nbsp; Add your information on website, please follow [Contribution Guide](https://github.com/salman-ibrahim/codefolio/blob/main/CONTRIBUTING.md)
+Please follow [Contribution Guide](https://github.com/salman-ibrahim/codefolio/blob/main/CONTRIBUTING.md)
 
 # Visual Representation
 ```mermaid
