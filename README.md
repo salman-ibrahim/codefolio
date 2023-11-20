@@ -26,14 +26,6 @@
 <li><a href="">Vite</a></li>
 </ul> </details>
 
-### :art: Color Reference
-| Color | Hex |
-| --------------- | ---------------------------------------------------------------- |
-| Primary Color | ![#242424](https://via.placeholder.com/10/242424?text=+) #242424 |
-| Secondary Color | ![#393E46](https://via.placeholder.com/10/393E46?text=+) #393E46 |
-| Accent Color | ![#00ADB5](https://via.placeholder.com/10/00ADB5?text=+) #00ADB5 |
-| Text Color | ![#EEEEEE](https://via.placeholder.com/10/EEEEEE?text=+) #EEEEEE |
-
 ## :toolbox: Getting Started
 
 ### :bangbang: Prerequisites
@@ -87,9 +79,28 @@ npm run lint
 
 <a href="https://github.com/salman-ibrahim/codefolio/graphs/contributors"> <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" /> </a>
 
-Contributions are always welcome!
+All code contributions - if you want change the ui -  must go through a pull request and be approved by a core developer before being merged. This is to ensure a proper review of all the code.
 
-see `contributing.md` for ways to get started
+After making changes add your information in contributors section in index.html
+
+We truly ❤️ pull requests! If you wish to help.
+
+✅  &nbsp; Add your information on website, please follow [Contribution Guide](https://github.com/salman-ibrahim/codefolio/blob/main/CONTRIBUTING.md)
+
+# Visual Representation
+```mermaid
+flowchart TD
+  A[lmas3009/cleandocs-template] --> B{Get This Repo};
+  B -- By Fork --> C[yourusername/cleandocs-template];
+  B -- By Clone --> D[Your Local Repo];
+  C ----> E[Create New Branch];
+  D ----> E[Create New Branch];
+  E --> F[Made Some Changes];
+  F --> G[Commit Changes];
+  G -- On GitHub --> H[Create Pull Request];
+  H -- If Rejected -- Made Changes Again --> F;
+  H -- If Approved --> I[Changes Done]
+```
 
 ### :scroll: Code of Conduct
 
@@ -97,7 +108,7 @@ Please read the [Code of Conduct](https://github.com/salman-ibrahim/codefolio/bl
 
 ## :warning: License
 
-Distributed under the no License. See LICENSE.txt for more information.
+Distributed under the MIT License. See LICENSE.txt for more information.
 
 ## :handshake: Contact
 
