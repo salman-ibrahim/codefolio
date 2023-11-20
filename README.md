@@ -19,6 +19,10 @@
 
 
 ## :star2: About the Project
+
+### :camera: Screenshots
+<div align="center"> <a href="https://salman-ibrahim.github.io/codefolio"><img src="https://raw.githubusercontent.com/salman-ibrahim/codefolio/main/public/screenshot.png" alt='image' width='800'/></a> </div>
+
 ### :space_invader: Tech Stack
 <details> <summary>Client</summary> <ul>
 <li><a href="">Typescript</a></li>
