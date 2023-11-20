@@ -5,21 +5,34 @@ on:
     types:
       - closed
 
+permissions:
+    contents: read
+    pages: write
+    id-token: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   deploy:
+    environment:
+      name: gh-pages
+      url: ${{steps.deployment.outputs.page_url}}
     runs-on: ubuntu-latest
 
     env:
       VITE_GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v3
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm install
@@ -27,9 +40,15 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Setup Pages
+        uses: actionsconfigure-pages@v3
+    
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: './dist'
+
       - name: Deploy to GitHub Pages
         if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main'
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+        id: deployment
+        uses: actions/deploy-pages@v1
