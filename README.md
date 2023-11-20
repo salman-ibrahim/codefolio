@@ -1,6 +1,6 @@
 <div align='center'>
 
-<img src=https://raw.githubusercontent.com/salman-ibrahim/codefolio/main/public/favicon.png alt="logo" width= height= />
+<img src="https://raw.githubusercontent.com/salman-ibrahim/codefolio/main/public/favicon.png alt="logo" width= height= />
 
 <h1>Welcome to Codefolio 👋</h1>
 <p>Codefolio, a pragmatic solution for developers seeking a sleek and efficient way to showcase their work. This open-source project combines a developer's expertise, a portfolio's utility, and minimal design that looks just like a code editor except it is not a code editor.</p>
