@@ -28,13 +28,11 @@ function Tooltip(props: Props) {
     };
 
     if (buttonRect.left + tooltipRect.width > window.innerWidth) {
-      // Tooltip goes beyond the right edge of the screen
-      position.left = 'auto';
-      position.right = 0;
+        // Tooltip goes beyond the right edge of the screen
+        // TODO: Position the tooltip to the left of the content
     } else {
-      // Default positioning
-      position.left = buttonRect.left + window.scrollX + buttonRect.width / 2 - tooltipRect.width / 2 + 'px';
-      position.right = 'auto';
+        // Default positioning
+        // TODO: Position the tooltip to the right of the content
     }
 
     return position;
