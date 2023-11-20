@@ -1,48 +1,115 @@
-<h1 align="center">Welcome to Codefolio 👋</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/salman-ibrahim/codefolio/blob/main/LICENSE" target="_blank">
-    <img alt="License: MIT License" src="https://img.shields.io/badge/License-MIT License-yellow.svg" />
-  </a>
-</p>
+<div align='center'>
 
-> Codefolio, a pragmatic solution for developers seeking a sleek and efficient way to showcase their work. This open-source project combines a developer's expertise, a portfolio's utility, and minimal design that looks just like a code editor except it is not a code editor.
+<img src="https://raw.githubusercontent.com/salman-ibrahim/codefolio/main/public/favicon.png" alt="logo" width="200px" height="200px" />
 
-### 🏠 [Homepage](https://salman-ibrahim.github.io/codefolio)
+<h1>Welcome to Codefolio 👋</h1>
+<p>Codefolio, a pragmatic solution for developers seeking a sleek and efficient way to showcase their work. This open-source project combines a developer's expertise, a portfolio's utility, and minimal design that looks just like a code editor except it is not a code editor.</p>
 
-### ✨ [Demo](https://salman-ibrahim.github.io/codefolio)
+<h4> <a href=https://salman-ibrahim.github.io/codefolio>View Demo</a> <span> · </span> <a href="https://github.com/salman-ibrahim/codefolio/blob/master/README.md"> Documentation </a> <span> · </span> <a href="https://github.com/salman-ibrahim/codefolio/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/salman-ibrahim/codefolio/issues"> Request Feature </a> </h4>
 
-## Install
 
-```sh
+</div>
+
+# :notebook_with_decorative_cover: Table of Contents
+
+- [About the Project](#star2-about-the-project)
+- [Roadmap](#compass-roadmap)
+- [License](#warning-license)
+- [Contact](#handshake-contact)
+
+
+## :star2: About the Project
+
+### :camera: Screenshots
+<div align="center"> <a href="https://salman-ibrahim.github.io/codefolio"><img src="https://raw.githubusercontent.com/salman-ibrahim/codefolio/main/public/screenshot.png" alt='image' width='800'/></a> </div>
+
+### :space_invader: Tech Stack
+<details> <summary>Client</summary> <ul>
+<li><a href="">Typescript</a></li>
+<li><a href="">React</a></li>
+<li><a href="">Vite</a></li>
+</ul> </details>
+
+## :toolbox: Getting Started
+
+### :bangbang: Prerequisites
+
+- node >= 18
+
+
+### :gear: Installation
+
+This project uses npm as package manager
+```bash
 npm install
 ```
 
-## Usage
 
-```sh
+### :running: Run Locally
+
+Clone the project
+
+```bash
+https://github.com/salman-ibrahim/codefolio
+```
+Go to the project directory
+```bash
+cd codefolio
+```
+Install dependencies
+```bash
+npm install
+```
+Start development server
+```bash
 npm run dev
 ```
+Linting before deployment
+```bash
+npm run lint
+```
 
-## Author
 
-👤 **Salman Ibrahim**
+## :compass: Roadmap
 
-* Github: [@salman-ibrahim](https://github.com/salman-ibrahim)
-* LinkedIn: [@salmanmalikpk](https://linkedin.com/in/salmanmalikpk)
+* [x] Visualize VS Code
+* [x] Bottom Panel
+* [x] Line numbers
+* [ ] Scrollbar (Cross Browser) Compatilblity
+* [ ] Minimap
 
-## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/salman-ibrahim/codefolio/issues). 
+## :wave: Contributing
 
-## Show your support
+<a href="https://github.com/salman-ibrahim/codefolio/graphs/contributors"> <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" /> </a>
 
-Give a ⭐️ if this project helped you!
+All code contributions - if you want change the ui -  must go through a pull request and be approved by a core developer before being merged. This is to ensure a proper review of all the code.
 
-## 📝 License
+I would love pull requests! If you wish to help.
 
-Copyright © 2023 [Salman Ibrahim](https://github.com/salman-ibrahim).<br />
-This project is [MIT License](https://github.com/salman-ibrahim/codefolio/blob/main/LICENSE) licensed.
+Please follow [Contribution Guide](https://github.com/salman-ibrahim/codefolio/blob/main/CONTRIBUTING.md)
 
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+# Visual Representation
+```mermaid
+flowchart TD
+  A[salman-ibrahim/codefolio] --> B{Get This Repo};
+  B -- By Fork --> C[yourusername/codefolio];
+  B -- By Clone --> D[Your Local Repo];
+  C ----> E[Create New Branch];
+  D ----> E[Create New Branch];
+  E --> F[Maka Some Changes];
+  F --> G[Commit Changes];
+  G -- On GitHub --> H[Create Pull Request];
+  H -- If Rejected -- Make more changes --> F;
+  H -- If Approved --> I[Changes Done]
+```
+
+## ⚖️: License
+
+Distributed under the MIT License. See LICENSE.txt for more information.
+
+## :handshake: Contact
+
+Salman Ibrahim - - salmanibrahim@duck.com
+
+Project Link: [https://github.com/salman-ibrahim/codefolio](https://github.com/salman-ibrahim/codefolio)
