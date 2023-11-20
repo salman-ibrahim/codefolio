@@ -1,0 +1,84 @@
+{
+    "name": "Salman Ibrahim",
+    "summary": "Passionate Software Engineer with a proven track record of delivering innovative solutions. Over 5 years of experience in designing and implementing robust applications using a wide range of technologies, including C#, .NET, and Azure. Excels in both individual and collaborative team environments, with a focus on creating scalable and efficient code. Experienced in full-stack development, cloud computing, and continuous integration/deployment. A problem solver with a keen eye for detail and a commitment to delivering high-quality software solutions.",
+    "email": "salmanibrahim@duck.com",
+    "linkedin": "https://www.linkedin.com/in/salmanmalikpk/",
+    "github": "https://github.com/salman-ibrahim",
+    "experience": [
+      {
+        "company": "microsoft",
+        "from": "Jan 2019",
+        "to": "present",
+        "designation": "Senior Software Engineer",
+        "description": [
+          "Lead a cross-functional team in developing cutting-edge applications for a variety of platforms.",
+          "Implemented scalable microservices architecture using .NET Core and Azure functions.",
+          "Collaborated with UX/UI designers to create intuitive and responsive user interfaces.",
+          "Championed best practices for code quality, testing, and documentation within the team.",
+          "Contributed to the development of internal tools to streamline workflows and improve team efficiency."
+        ]
+      },
+      {
+        "company": "meta-inc",
+        "from": "May 2016",
+        "to": "Dec 2018",
+        "designation": "Software Developer",
+        "description": [
+          "Designed and implemented backend systems for a healthcare management application.",
+          "Collaborated with frontend developers to ensure seamless integration of features.",
+          "Optimized database queries and improved application performance.",
+          "Developed RESTful APIs to support mobile applications and third-party integrations.",
+          "Participated in code reviews to maintain code quality and adherence to coding standards."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "institute": "university-of-computer-science",
+        "degree": "Bachelor of Science in Computer Science",
+        "from": "2012",
+        "to": "2016"
+      },
+      {
+        "institute": "city-college-of-technology",
+        "degree": "Diploma in Information Technology",
+        "from": "2010",
+        "to": "2012"
+      }
+    ],
+    "projects": [
+      {
+        "title": "smarthome-automation-system",
+        "description": "Developed a comprehensive home automation system that allows users to control smart devices remotely. Utilized IoT principles and integrated with voice assistants for a seamless user experience.",
+        "preview": "https://smarthome.example.com",
+        "highlights": [
+          "Internet of Things (IoT)",
+          "React",
+          "Node.js",
+          "AWS Lambda"
+        ]
+      },
+      {
+        "title": "code-insights-dashboard",
+        "description": "Built a real-time code analysis dashboard for monitoring code quality metrics. Integrated with popular CI/CD tools and provided actionable insights to development teams.",
+        "github": "https://github.com/johndoe/codeinsights",
+        "highlights": [
+          "React",
+          "Redux",
+          "Docker",
+          "Continuous Integration"
+        ]
+      }
+    ],
+    "downloads": [
+      {
+        "title": "resume",
+        "resource": "/resume.pdf"
+      }
+    ],
+    "links": {
+        "github": "https://github.com/salman-ibrahim/codefolio",
+        "license": "https://github.com/salman-ibrahim/codefolio/blob/main/LICENSE"
+    }
+  }
+  
