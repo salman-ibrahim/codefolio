@@ -7,6 +7,7 @@ type RepositoryData = {
     stargazers_count: number,
     forks_count: number,
     watchers_count: number,
+    full_name: string
 }
 
 function StatusBar() {
@@ -23,7 +24,7 @@ function StatusBar() {
         const data = await response.json()
 
         // Filter from all the results where item.full_name === salman-ibrahim/codefolio
-        const repo = data.items.filter((item: any) => item.full_name === 'salman-ibrahim/codefolio')[0]
+        const repo = data.items.filter((item: RepositoryData) => item.full_name === 'salman-ibrahim/codefolio')[0]
         setRepositoryData(repo)
     }
 
