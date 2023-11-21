@@ -69,6 +69,8 @@ Linting before deployment
 npm run lint
 ```
 
+To update the content you just need to modify ```src/values/strings.json``` file and that's all. To add more sections simply Modify ```src/containers/Portfolio.tsx```
+
 
 ## :compass: Roadmap
 
