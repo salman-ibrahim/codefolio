@@ -69,6 +69,8 @@ Linting before deployment
 npm run lint
 ```
 
+To update the content you just need to modify ```src/values/strings.json``` file and that's all. To add more sections simply Modify ```src/containers/Portfolio.tsx```
+
 
 ## :compass: Roadmap
 
@@ -81,8 +83,8 @@ npm run lint
 
 ## :wave: Contributing
 
-<a href="https://github.com/remarkablemark/html-react-parser/graphs/contributors">
-  <img src="https://opencollective.com/html-react-parser/contributors.svg?width=890&button=false">
+<a href="https://github.com/salman-ibrahim/codefolio/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=salman-ibrahim/codefolio" />
 </a>
 
 All code contributions - if you want change the ui -  must go through a pull request and be approved by a core developer before being merged. This is to ensure a proper review of all the code.
