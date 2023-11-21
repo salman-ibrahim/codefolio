@@ -12,9 +12,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    env:
-      VITE_GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -27,5 +24,33 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Lint code
+        run: npm run lint
+
       - name: Build app
         run: npm run build
+    
+      - name: Checks Failed
+        if: failure()
+        uses: actions/github-script@v6
+        with:
+          script: |
+            core.setFailed("Linting or build errors detected. Please fix them and push again.")
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: "⚠️ Looks like you missed something Linting or build errors detected. Please fix them and push again."
+            })
+
+      - name: All Checks Passed
+        if: success()
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: "Kudos! All checks passed. 🎉 Thanks for contributing to the project, one of our maintainers will review your changes soon."
+            })
