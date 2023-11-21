@@ -3,17 +3,10 @@ import Tooltip from "./Elements/Tooltip"
 import { Chrome, Copyright, Eye, Fullscreen, GitBranch, GitFork, Github, Hash, Scale, Star } from "lucide-react"
 import values from "@/values/strings.json"
 
-type License = {
-    key: string,
-    name: string,
-    url: string,
-}
-
 type RepositoryData = {
     stargazers_count: number,
     forks_count: number,
     watchers_count: number,
-    license: License,
 }
 
 function StatusBar() {
@@ -24,15 +17,14 @@ function StatusBar() {
     const fetchRepositoryData = async () => {
         // make fetch request with above using fetch api
         // Add X-GitHub-Api-Version: 2022-11-28 header to request
-        const headers = new Headers()
-        headers.append('Accept', 'application/vnd.github.v3+json')
-        headers.append('X-GitHub-Api-Version', '2022-11-28')
-        headers.append('Authorization', `token ${import.meta.env.VITE_GITHUB_ACCESS_TOKEN}`)
-        const response = await fetch('https://api.github.com/repos/salman-ibrahim/codefolio', {
-            headers: headers
-        })
+        // const endpoint = 'https://api.github.com/repos/salman-ibrahim/codefolio'
+        const endpoint = 'https://api.github.com/search/repositories?q=salman-ibrahim/codefolio'
+        const response = await fetch(endpoint)
         const data = await response.json()
-        setRepositoryData(data)
+
+        // Filter from all the results where item.full_name === salman-ibrahim/codefolio
+        const repo = data.items.filter((item: any) => item.full_name === 'salman-ibrahim/codefolio')[0]
+        setRepositoryData(repo)
     }
 
     useEffect(() => {
@@ -111,12 +103,16 @@ function StatusBar() {
                     <span className="ml-1">CSS</span>
                 </div>
 
-                <a className="unstyled-link" href={repositoryData?.license?.url} target="_blank" rel="noreferrer">
-                    <div className="status-item items-center">
-                        <Scale size={12} />
-                        <span className="ml-1">MIT</span>
-                    </div>
-                </a>
+                {
+                    values.links.license !== undefined
+                    &&
+                    <a className="unstyled-link" href={values.links.license} target="_blank" rel="noreferrer">
+                        <div className="status-item items-center">
+                            <Scale size={12} />
+                            <span className="ml-1">MIT</span>
+                        </div>
+                    </a>
+                }
 
                 <a className="unstyled-link" href={values.github} target="_blank" rel="noreferrer">
                     <div className="status-item items-center">

@@ -1,9 +1,9 @@
 name: Deploy to GitHub Pages 🚀
 
 on:
-  push:
-    branches:
-      - main
+    push:
+        branches:
+            - main
 
 permissions:
     contents: read
@@ -20,9 +20,6 @@ jobs:
       name: github-pages
       url: ${{steps.deployment.outputs.page_url}}
     runs-on: ubuntu-latest
-
-    env:
-      VITE_GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Checkout
