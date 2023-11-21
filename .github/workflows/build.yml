@@ -13,6 +13,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    
+      - name: Build Checks
+        uses: actions/github-script@v6
+        with:
+            script: |
+              github.rest.checks.create({
+                 name: 'Build Checks',
+                 head_sha: context.sha,
+                 status: 'in_progress',
+                 started_at: new Date().toISOString(),
+                 output: {
+                title: 'Build Checks',
+                summary: 'Build Checks',
+                 },
+                 owner: context.repo.owner,
+                 repo: context.repo.repo
+              })
       - name: Checkout code
         uses: actions/checkout@v3
 
@@ -30,7 +47,7 @@ jobs:
       - name: Build app
         run: npm run build
     
-      - name: Check for Lint/Build Errors
+      - name: Checks Failed
         if: failure()
         uses: actions/github-script@v6
         with:
@@ -42,20 +59,8 @@ jobs:
               repo: context.repo.repo,
               body: "Looks like you missed something Linting or build errors detected. Please fix them and push again."
             })
-            github.rest.checks.create({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              name: "Linting and Build Errors",
-              head_sha: context.sha,
-              status: "completed",
-              conclusion: "failure",
-              output: {
-                title: "Linting or Build Errors",
-                summary: "Linting/Build errors detected. Please fix them and push again."
-              }
-            })
 
-      - name: If No Errors, Merge
+      - name: All Checks Passed
         if: success()
         run: |
           if [ -z "$(git diff --name-only ${{ github.sha }} ${{ github.event.before }})" ]; then
