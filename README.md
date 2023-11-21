@@ -81,7 +81,9 @@ npm run lint
 
 ## :wave: Contributing
 
-<a href="https://github.com/salman-ibrahim/codefolio/graphs/contributors"> <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" /> </a>
+<a href="https://github.com/remarkablemark/html-react-parser/graphs/contributors">
+  <img src="https://opencollective.com/html-react-parser/contributors.svg?width=890&button=false">
+</a>
 
 All code contributions - if you want change the ui -  must go through a pull request and be approved by a core developer before being merged. This is to ensure a proper review of all the code.
 
